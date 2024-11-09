@@ -1,2 +1,2 @@
-- lp.jotatreinamentos.com.br
+- lp.jt treiname j 
 - Acesso ao site
