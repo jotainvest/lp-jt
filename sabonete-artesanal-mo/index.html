@@ -1,0 +1,676 @@
+<!DOCTYPE html><html><head>
+    <title>Sabonete Artesanal</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            background-color: #510032;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #666666;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 826px;
+            margin: auto;
+            margin-bottom: -30px;
+            background-color: #282828;
+            text-align: center;
+            padding: 0;
+        }
+
+        .footer {
+            width: 100%;
+            max-width: 826px;
+            margin: auto;
+            background-color: #282828;
+            text-align: center;
+            padding: 0;
+        }
+
+        .header img,
+        .footer img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            background: url("images/bg.webp");
+            background-size: contain;
+            background-repeat: repeat;
+            margin: auto;
+            max-width: 826px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        .content {
+            color: #000;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #cc0000;
+        }
+
+        h2 {
+            font-size: 1.75em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p,
+        ul {
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .order-button {
+            text-align: center;
+        }
+
+        .guarantee-box {
+            text-align: center;
+            padding: 20px;
+            border: 3px dashed #9B0707;
+            background-color: #ffffcc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+            }
+
+            h2,
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .content {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        /* Adicionei o CSS da seção de ofertas aqui */
+        .offers-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .offer {
+            background-color: #fff;
+            border: 2px solid #00b300;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-title,
+        .plan-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .offer-title h2,
+        .plan-title h2 {
+            background-color: #FFD700;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .plan-title h2 {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+
+        .details h3,
+        .details p {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            text-align: center;
+            font-size: 44px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: #00b300;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 22px;
+        }
+
+        .btn:hover {
+            background-color: #009900;
+            color: #fff;
+        }
+
+        .note {
+            color: red;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+         /* Estilo para o contêiner de garantia */
+.guarantee-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 30px;
+    border: 3px solid #800080;
+    border-radius: 10px;
+    background-color: #fff3e6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+
+/* Estilo para a imagem de garantia */
+.guarantee-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #800080;
+}
+
+/* Estilo para o conteúdo da garantia */
+.guarantee-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilo para o título da garantia */
+.guarantee-content h2 {
+    margin: 0 0 20px;
+    color: #800080;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo para o texto da garantia */
+.guarantee-content p {
+    color: #333;
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .guarantee-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guarantee-container img {
+        margin: 0 auto 20px;
+    }
+
+    .guarantee-content h2 {
+        font-size: 1.5em;
+    }
+
+    .guarantee-content p {
+        font-size: 1em;
+    }
+}
+
+
+        /* Estilo para o contêiner dos depoimentos */
+        .testimonial-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Para garantir que o layout se ajuste em telas menores */
+}
+
+/* Estilo para a imagem da cliente */
+.testimonial-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover; /* Para garantir que a imagem se ajuste bem ao contêiner */
+}
+
+/* Estilo para o conteúdo do depoimento */
+.testimonial-content {
+    flex: 1;
+}
+
+/* Estilo para o texto do depoimento */
+.testimonial-content p {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    position: relative; /* Necessário para o símbolo de aspas */
+    padding-left: 20px;
+}
+
+.testimonial-content p::before {
+    content: '“';
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #800080; /* Cor das aspas */
+}
+
+/* Estilo para o nome do cliente */
+.testimonial-content strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .testimonial-container img {
+        margin: 0 auto 10px;
+    }
+    
+    .testimonial-content p {
+        padding-left: 0;
+    }
+    
+    .testimonial-content p::before {
+        display: none;
+    }
+}
+
+
+/* Estilo geral para a lista não ordenada */
+ul {
+    list-style: none; /* Remove as bolinhas padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin: 20px 0; /* Adiciona margem superior e inferior */
+}
+
+/* Estilo para cada item da lista */
+ul li {
+    position: relative; /* Para posicionamento absoluto do ícone */
+    padding-left: 30px; /* Espaço para o ícone à esquerda */
+    margin-bottom: 10px; /* Espaço entre os itens */
+    font-size: 1.1em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para o ícone personalizado */
+ul li::before {
+    content: '✔'; /* Símbolo de checkmark */
+    position: absolute; /* Posicionamento absoluto */
+    left: 0; /* Alinhamento à esquerda */
+    top: 0; /* Alinhamento ao topo */
+    color: #800080; /* Cor do ícone */
+    font-size: 1.2em; /* Tamanho do ícone */
+    line-height: 1.1em; /* Altura da linha do ícone */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    ul li {
+        font-size: 1em; /* Ajuste do tamanho da fonte em telas menores */
+    }
+
+    ul li::before {
+        font-size: 1.1em; /* Ajuste do tamanho do ícone em telas menores */
+    }
+}
+
+
+        /* Media Queries para dispositivos móveis */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            h1 {
+                font-size: 1.4em;
+            }
+
+            h2,
+            h3 {
+                font-size: 1.1em;
+            }
+        }
+
+        /* Media Queries para telas maiores (desktops) */
+        @media (min-width: 769px) {
+            .content {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+
+        @media (min-width: 600px) {
+            .offers-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .offer {
+                width: 45%;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/header.webp" alt="Header Image">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div align="center"><img src="images/headline.webp" alt="logo"></div>
+            <!---- <h2>Sentindo Que a Idade Está Pegando?</h2>
+            <h1>Muit</h1>
+            <h3>Além de receber os nossos sinais, você vai poder operar em live comigo!</h3> -->
+            <p><strong>Data:</strong>
+                <script>document.write(new Date().toLocaleDateString());</script>11/9/2024
+
+                <br><strong>De:</strong> Jota
+            </p>
+            <p>Amiga, eu quero compartilhar com você algo que <strong>mudou a minha vida</strong>.</p>
+
+            <p>O que você acha da ideia de ter o <strong>seu próprio negócio</strong> e conseguir
+                conquistar a sua <u>liberdade financeira</u>?</p>
+
+            <p>Foi o que aconteceu comigo quando eu decidi entrar no mercado de sabonetes artesanais.</p>
+
+            <p>Mas confesso que o que mudou a minha vida não foi o simples fato de aprender umas receitas que
+                você pega ai no YouTube.</p>
+
+            <p>Afinal de contas, qualquer pessoa que tem acesso a internet, pode entrar no YouTube e pesquisar por
+                receitas, comprar os materiais e fazer seus próprios sabonetes artesanais.</p>
+
+            <p>Claro que os primeiros podem não ficar bons, mas lá pro décimo, certamente
+                você estará fazendo sabonetes exatamente como eu faço.</p>
+
+            <h1>O que mudou a minha vida foi aprender a criar uma marca forte e vender pela internet</h1>
+
+            <p>Eu aprendi que pessoas ricas compram exclusividade, experiência�&nbsp;e marca.</p>
+
+            <p>Hoje eu vendo conjuntos que podem chegar até R$ 1.497 graças ao posicionamento da minha
+                marca e a experiência que o meu cliente recebe.</p>
+
+            <p>Sim, eu criei uma marca de luxo de sabonetes artesanais, aonde cada unidade começa custando R$ 97.
+            </p>
+
+            <p>É isso mesmo que você acabou de ler, eu vendo um único sabonete por noventa e sete
+                reais.</p>
+
+            <p>Hoje a minha empresa investe muito mais em embalagem e acessórios do que propriamente no sabonete
+                em si.</p>
+
+            <p>E foi quando eu aprendi que pessoas ricas valorizam muito a experiência de compra foi o que me fez
+                tomar essa decisão de criar uma marca de sabonetes artesanais apenas para ricos.</p>
+
+            <h2><strong><span style="color:#800080">Você também pode criar um negócio de luxo
+                        investindo muito pouco e tendo alta margem de lucro!</span></strong></h2>
+
+            <p>Sabe o que é melhor?</p>
+
+            <p>As pessoas que compram os meus sabonetes usam ele ao invés de deixar como decoração
+                e isso me faz fazer vendas todos os meses dos nossos kits.</p>
+
+            <p>Hoje meu carro chefe é um conjunto com 05�&nbsp;sabonetes artesanais que vendo por R$ 500 mais o
+                custo de frete, e adivinhe o que acontece no mês seguinte?</p>
+
+            <p>O mesmo cliente pede de novo o kit.</p>
+
+            <p>Isso mesmo, minhas clientes voltam mês após mês para comprar mais, pois adoram a
+                qualidade e a experiência que minha marca proporciona.</p>
+
+            <p>E você pode alcançar o mesmo sucesso com o nosso guia completo de sabonetes artesanais.</p>
+
+            <h1>Faça Sabonetes Artesanais que Vendem como Água: Guia Completo</h1>
+
+            <p><strong>O que você vai encontrar neste guia:</strong></p>
+
+            <ul>
+                <li>Receitas exclusivas e testadas de sabonetes artesanais</li>
+                <li>Técnicas avançadas de fabricação para garantir a melhor qualidade</li>
+                <li>Como criar embalagens luxuosas que encantam seus clientes</li>
+                <li>Estratégias de marketing para posicionar sua marca no mercado de luxo</li>
+                <li>Dicas práticas de como vender online e alcançar clientes em todo o país</li>
+            </ul>
+
+            <p>Com este guia, você não estará apenas aprendendo a fazer sabonetes artesanais,
+                você estará se preparando para criar uma marca forte e reconhecida.</p>
+
+            <p>Imagine receber elogios constantes dos seus clientes e ver suas vendas crescerem mês após
+                mês.</p>
+
+            <p><strong>Não perca essa oportunidade de transformar sua vida e alcançar a liberdade
+                    financeira que você sempre sonhou.</strong></p>
+                   
+                   
+            <div class="guarantee-box">
+            <h2>Receba Bônus Exclusivos!</h2> 
+                <strong>Além do nosso guia completo, você também receberá:</strong>
+            <br>
+            <ul>
+                <li>Um e-book sobre como criar um branding irresistível para sua marca</li>
+                <li>Acesso a um grupo exclusivo no Facebook para trocar experiências e tirar dúvidas</li>
+                <li>Atualizações vitalícias do guia, com novas receitas e técnicas</li>
+                <li>Um workshop online ao vivo sobre vendas e marketing digital</li>
+            </ul></div>
+
+            <h2><span style="color:#800080">Invista Pouco e Tenha Alta Margem de Lucro!</span></h2>
+
+            <p>Por apenas R$ 47, você terá acesso imediato a todo esse conteúdo que pode mudar sua
+                vida.</p>
+
+            <p>Sim, é um pequeno investimento comparado ao potencial de lucro que você pode alcançar
+                com seu próprio negócio de sabonetes artesanais de luxo.</p>
+
+            <p><strong>Garanta já o seu guia e comece a transformar sua paixão em um negócio
+                    lucrativo!</strong></p>
+
+            <h2>Depoimentos de Clientes Satisfeitos</h2>
+
+            <p>Veja o que algumas de nossas alunas têm a dizer:</p>
+
+            <div class="testimonial-container">
+                <img src="images/1.png" alt="Foto da Cliente">
+                <div class="testimonial-content">
+                    <p>"Eu nunca imaginei que poderia vender sabonetes artesanais por preços tão altos. Graças ao guia, criei minha marca de luxo e hoje tenho uma renda estável vendendo online!"</p>
+                    <strong>Maria S.</strong>
+                </div>
+            </div>
+            
+            <div class="testimonial-container">
+                <img src="images/2.png" alt="Foto da Cliente">
+                <div class="testimonial-content">
+                    <p>"O guia é completo e fácil de seguir. As receitas são incríveis e as dicas de marketing me ajudaram a posicionar minha marca no mercado. Super recomendo!"</p>
+                    <strong>Ana P.</strong>
+                </div>
+            </div>
+            
+            <p>Lembrando que você tem 30�&nbsp;dias pra cancelar sua matrícula se entender que o nosso curso�&nbsp;não é pra você.</p>
+
+            <p>Todo o valor do curso lhe será reembolsado.</p>
+
+            <p>Mas acho difícil você querer devolver algo que pode lhe render, em apenas uma venda, muito mais do que você vai pagar por todo treinamento.</p>
+
+
+            <div class="guarantee-container">
+                <img src="images/selo.webp" alt="Selo de Garantia" class="guarantee-image">
+                <div class="guarantee-content">
+                    <h2>Garantia de Satisfação de 30 Dias</h2>
+                    <p>Estamos tão confiantes na qualidade do nosso guia que oferecemos uma <strong>garantia de satisfação de 30 dias</strong>. Se por qualquer motivo você não estiver satisfeita com o conteúdo, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+                </div>
+            </div>
+            
+
+            <p><strong>Não espere mais para transformar sua vida. </strong></p>
+            <p>Não se esqueça.</p>
+
+            <p>Você não é um número pra mim, é um sonho que eu quero ajudar a realizar.</p>
+
+            <p>E mesmo que você esteja só começando.</p>
+
+            <p>Eu vou te ajudar a buscar essa renda adicional pra sua vida.</p>
+
+            <p>Estamos juntos nessa jornada.</p>
+
+            <h2><span style="color:#800080">Escolha a melhor oferta para você!</span></h2>
+
+            
+            <!-- Aqui começa a seção de ofertas -->
+            <div class="offers-container">
+                <div class="offer">
+                    <div class="offer-title">
+                        <h2>SUPER OFERTA</h2>
+                    </div>
+                    
+                    <div class="details">
+                        <h3>Inclui:</h3>
+                        <p>✅ Como criar um branding irresistível para sua marca</p>
+                        <p>✅ Acesso a um grupo exclusivo no Facebook para trocar experiências e tirar dúvidas</p>
+                        <p>✅ Atualizações vitalícias do guia, com novas receitas e técnicas</p>
+                        <p>✅ Vídeo aulas completas</p>
+                        <p>✅ Apostila com as receitas que eu faço para vender</p>
+                        <p>✅ Um workshop online ao vivo sobre vendas e marketing digital</p>
+                        <p>✅ Acesso vitalício ao nosso material</p>
+                        <p>✅ Suporte exclusivo via whatsapp por 90 dias</p>
+                    </div>
+                    <div class="price">R$47</div>
+                    <a href="https://app.monetizze.com.br/checkout/DAQ72646" class="btn"><b>COMPRE AGORA</b></a>
+                    <p class="note">Preço especial de lançamento</p>
+                </div>
+                <div class="offer">
+                   
+                    <div class="plan-title">
+                        <h2>Plano básico</h2>
+                    </div>
+                    <div class="details">
+                        <h3>Inclui:</h3>
+                        <p>✅ Receitas para fazer seus sabonetes</p>
+                        <p>✅ PDF para download</p>
+                        <p>✅ Acesso a vídeos explicativos</p>
+                        <p>✅ Consultoria por email por 1 mês</p>
+                    </div>
+                    <div class="price">R$ 27</div>
+                    <a href="up.html" class="btn">QUERO ESSA OPÇÃO</a>
+                    
+                </div>
+            </div>
+            <!-- Aqui termina a seção de ofertas -->
+
+           
+        
+
+        <p>Com carinho,</p>
+
+            <p><strong>Jota</strong></p>
+
+
+            <p>A única coisa que resta é descer do muro e tomar a decisão hoje de começar um novo estilo de vida seguindo um programa e uma forma de viver fantástica.</p>
+
+            <p>Garanta Sua Cópia Hoje.</p>
+            
+            <p>Mesmo Que Seja �&nbsp;s 2 horas da madrugada!</p>
+            <p>.</p>
+            <div align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="296">
+                <tbody>
+                <tr>
+                <td><a href="./disclaimer.html" class="style1">disclaimer</a></td>
+                <td><a href="./privacidade.html" class="style1">privacidade</a></td>
+                <td><a href="./termos.html" class="style1">termos</a></td>
+                </tr>
+                </tbody>
+                </table></div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/footer.webp" alt="Footer Image">
+    </div>
+
+
+</body></html>

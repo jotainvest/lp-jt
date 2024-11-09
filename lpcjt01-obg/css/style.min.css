@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=JetBrains+Mono:wght@200;700&display=swap");
+
+.noWrap {
+    white-space: nowrap
+}
+
+.highlight,
+.highlight-2,
+.highlight-3 {
+    font-family: inherit
+}
+
+.highlight {
+    color: #3d89ff
+}
+
+.highlight-2 {
+    color: #ff3636
+}
+
+.highlight-3 {
+    background: #ff9c9c
+}
+
+.highlight-4 {
+    color: #ff9c9c
+}
+
+.highlightG {
+    background: -webkit-linear-gradient(-35deg, #ff9c9c, #3d89ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone
+}
+
+.center {
+    text-align: center
+}
+
+.left {
+    text-align: left
+}
+
+.right {
+    text-align: right
+}
+
+.bolder {
+    font-weight: 700
+}
+
+.bigger {
+    font-size: 2.2em
+}
+
+.biggerTitle {
+    margin-bottom: 0.35rem
+}
+
+.smaller {
+    font-size: 0.6em
+}
+
+.hidden {
+    display: none !important
+}
+
+.supportText {
+    color: #fff5db
+}
+
+.btnDesk {
+    display: none !important
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+}
+
+.imagesOnText {
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 2rem
+}
+
+* {
+    color: inherit;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-family: 'Be Vietnam Pro', sans-serif
+}
+
+body {
+    margin: 0;
+    background: #01091f
+}
+
+a,
+b,
+u,
+i,
+span {
+    font-family: inherit
+}
+
+b,
+strong {
+    font-weight: 500
+}
+
+u {
+    text-decoration-color: #3d89ff;
+    cursor: pointer
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1
+}
+
+.blocks {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    position: relative
+}
+
+.stHeader {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to left, #000206, #01091f 50%);
+    color: #fff
+}
+
+h1,
+h2,
+h3,
+p,
+ul li,
+ol li {
+    margin: 0 auto 1.7rem;
+    font-weight: 200;
+    letter-spacing: 0.03rem
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1.2em
+}
+
+h1 span {
+    font-weight: 200;
+    font-size: 0.55em;
+    line-height: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block
+}
+
+h2 {
+    font-size: 1.6em;
+    line-height: 1.3em
+}
+
+h3 {
+    font-size: 1.35em;
+    line-height: 1.4em
+}
+
+p,
+ul li,
+ol li {
+    font-size: 1em;
+    line-height: 1.35em
+}
+
+footer {
+    width: 100%;
+    background-color: #01091f;
+    color: #9298ad;
+    font-weight: 200;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center
+}
+
+footer .logoJota {
+    width: 100px;
+    margin: 0 auto 22px
+}
+
+footer p {
+    max-width: 880px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.65rem;
+    line-height: 1rem
+}
+
+footer p:last-child {
+    margin: 0 auto 100px
+}
+
+footer p a {
+    text-decoration: underline
+}
+
+@media only screen and (min-width: 400px) {
+    .imgCampaign {
+        max-width: 320px
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 700px
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .blocks {
+        padding: 3.5rem
+    }
+
+    .container {
+        max-width: 880px;
+        font-size: 1.2em
+    }
+
+    footer p:last-child {
+        margin: 0 auto
+    }
+}
+
+@media only screen and (min-height: 920px) {
+    .stHeader .container {
+        min-height: 90vh
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1100px
+    }
+}
+
+.popUp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: none
+}
+
+.popUpOverlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.popUpContent {
+    width: calc(100% - (1rem * 2));
+    max-width: 460px;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem 1rem;
+    border-radius: 4px;
+    border: solid 1px #555;
+    background: #000;
+    color: #f9f9f9;
+    text-align: center
+}
+
+.buttonClosePopUp {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: calc(1rem / 2);
+    right: calc(1rem / 2);
+    cursor: pointer;
+    display: table
+}
+
+.buttonClosePopUp::before,
+.buttonClosePopUp::after {
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100px;
+    background: #8492a8;
+    display: table
+}
+
+.buttonClosePopUp::before {
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.buttonClosePopUp::after {
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+@media only screen and (min-width: 1000px) {
+    .popUpContent {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+.progressBar {
+    width: 100%;
+    max-width: 600px;
+    height: 25px;
+    margin: 0 auto 1.7rem;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    background: linear-gradient(to right, #3d89ff, #bdd7ff);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 33% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    -webkit-animation: progressBar 6s ease 1;
+    -moz-animation: progressBar 6s ease 1;
+    animation: progressBar 6s ease 1
+}
+
+@-webkit-keyframes progressBar {
+    0% {
+        background-size: 5% 100%
+    }
+
+    40% {
+        background-size: 20% 100%
+    }
+
+    80% {
+        background-size: 33% 100%
+    }
+}
+
+@-moz-keyframes progressBar {
+    0% {
+        background-size: 5% 100%
+    }
+
+    40% {
+        background-size: 20% 100%
+    }
+
+    80% {
+        background-size: 33% 100%
+    }
+}
+
+@keyframes progressBar {
+    0% {
+        background-size: 5% 100%
+    }
+
+    40% {
+        background-size: 20% 100%
+    }
+
+    80% {
+        background-size: 33% 100%
+    }
+}
+
+.progressBar span {
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.boxSteps.flex {
+    margin-top: 6rem
+}
+
+@media (min-width: 768px) {
+    .boxSteps.flex {
+        align-items: stretch
+    }
+}
+
+.boxEmail,
+.boxTelegram {
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    padding: 0.8rem;
+    position: relative
+}
+
+.boxEmail::before,
+.boxTelegram::before {
+    padding: 0.35rem 0.9rem;
+    border-radius: 30px;
+    border: solid 1px #ff3636;
+    background: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ff3636;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@media (min-width: 768px) {
+
+    .boxEmail,
+    .boxTelegram {
+        width: calc(50% - (1rem * 1.2));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+}
+
+.boxEmail::before {
+    content: "Passo 1"
+}
+
+.boxTelegram::before {
+    content: "Passo 2"
+}
+
+.boxEmail {
+    margin-bottom: calc(1rem * 6)
+}
+
+@media (min-width: 768px) {
+    .boxEmail {
+        margin: 0
+    }
+}
+
+.boxEmail .boxButtonsEmail {
+    max-width: 180px;
+    margin: 0 auto
+}
+
+.boxEmail .boxButtonsEmail a {
+    width: calc(33.3% - 25px)
+}
+
+.boxEmail .boxButtonsEmail a img {
+    width: 100%
+}
+
+.boxGroupsButtons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch
+}
+
+.boxGroupsButtons .btn {
+    width: calc(100%);
+    margin: 0
+    align: center;
+}
+
+.btn {
+    width: 100%;
+    max-width: 440px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: -0.01rem;
+    line-height: 1.35rem;
+    position: relative;
+    padding: 0.9rem 1rem;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(30deg, #57bff4, #10a4ee);
+    cursor: pointer;
+    border-radius: 8px;
+    display: block
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 0.95rem
+    }
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(30deg, #57bff4, #10a4ee);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.6
+}
+
+.btn:hover {
+    background: linear-gradient(30deg, #10a4ee, #57bff4);
+    transform: scale(1.02);
+    transition: 0.2s
+}
+
+.btn img {
+    width: 14px;
+    margin-right: 8px
+}
+
+.btn.wt {
+    background: linear-gradient(30deg, #04ffaf, #00b67c)
+}
+
+.btn.wt::before {
+    background: linear-gradient(30deg, #04ffaf, #00b67c)
+}
+
+.btn.wt:hover {
+    background: linear-gradient(30deg, #00b67c, #04ffaf)
+}
