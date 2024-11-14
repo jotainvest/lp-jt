@@ -1,0 +1,1250 @@
+<!-- html page -->
+<html>
+
+<head>
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Plano 5k">
+	<meta name="twitter:title" content="Plano 5k">
+	<meta property="og:site_name" content="JT-base">
+	<meta name="application-name" content="JT-base">
+	<title>Plano 5k</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet"
+		type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&amp;displat=swap"
+		rel="stylesheet" type="text/css">
+	<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-row-7 .bee-col-1,
+		.bee-row-7 .bee-col-2 {
+			border-bottom: 0 solid #0d1f2e;
+			border-left: 0 solid #0d1f2e;
+			border-right: 0px solid #0d1f2e;
+			border-top: 0 solid #0d1f2e
+		}
+
+		.bee-row-9,
+		.bee-row-9 .bee-row-content {
+			background-size: auto
+		}
+
+		body {
+			background-color: #0d1f2e;
+			color: #000000;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+		}
+
+		a {
+			color: #7c4b96
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1020px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33.3333333333%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-button .content,
+		.bee-html-block {
+			text-align: center
+		}
+
+		.bee-button a {
+			text-decoration: none
+		}
+
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-2 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 h1,
+		.bee-row-1 .bee-col-1 .bee-block-5 h1,
+		.bee-row-2 .bee-col-1 .bee-block-4 h1,
+		.bee-row-3 .bee-col-1 .bee-block-4 h1,
+		.bee-row-3 .bee-col-1 .bee-block-5 h1,
+		.bee-row-4 .bee-col-1 .bee-block-1 h1 {
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight: 700;
+			direction: ltr;
+			letter-spacing: normal
+		}
+
+		.bee-row-2 .bee-row-content,
+		.bee-row-4 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-repeat: no-repeat;
+			border-radius: 0;
+			color: #000000
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph {
+			overflow-wrap: anywhere
+		}
+
+		.bee-video a {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: block
+		}
+
+		.bee-video img {
+			display: block;
+			width: 100%;
+			height: auto
+		}
+
+		.bee-video svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center
+		}
+
+		.bee-row-1,
+		.bee-row-2,
+		.bee-row-3,
+		.bee-row-4,
+		.bee-row-5 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-3 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-row-1 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-3 .bee-col-1,
+		.bee-row-4 .bee-col-1,
+		.bee-row-4 .bee-col-2,
+		.bee-row-5 .bee-col-1,
+		.bee-row-6 .bee-col-1,
+		.bee-row-8 .bee-col-1,
+		.bee-row-9 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2,
+		.bee-row-2 .bee-col-1 .bee-block-6,
+		.bee-row-2 .bee-col-1 .bee-block-8,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-5 .bee-col-1 .bee-block-4,
+		.bee-row-5 .bee-col-1 .bee-block-6,
+		.bee-row-8 .bee-col-1 .bee-block-4 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4,
+		.bee-row-2 .bee-col-1 .bee-block-4,
+		.bee-row-3 .bee-col-1 .bee-block-4,
+		.bee-row-6 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-3,
+		.bee-row-7 .bee-col-2 .bee-block-3,
+		.bee-row-7 .bee-col-3 .bee-block-3,
+		.bee-row-8 .bee-col-1 .bee-block-2 {
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-5,
+		.bee-row-3 .bee-col-1 .bee-block-5 {
+			padding-bottom: 30px;
+			padding-top: 25px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 {
+			padding-top: 15px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-6,
+		.bee-row-7,
+		.bee-row-8 {
+			background-color: #ffffff;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-7 .bee-col-1,
+		.bee-row-7 .bee-col-2,
+		.bee-row-7 .bee-col-3 {
+			padding: 40px 10px 5px
+		}
+
+		.bee-row-7 .bee-col-1 {
+			background-color: #ffffff
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-2 .bee-block-2,
+		.bee-row-7 .bee-col-3 .bee-block-2 {
+			padding-bottom: 10px;
+			padding-top: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-7 .bee-col-3 .bee-block-1 {
+			padding-bottom: 20px;
+			width: 100%
+		}
+
+		.bee-row-9 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-1 {
+			padding-top: 50px;
+			width: 100%
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-2 {
+			padding: 10px 10px 20px;
+			color: #cbcbcb;
+			direction: ltr;
+			font-size: 9px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 h1,
+		.bee-row-2 .bee-col-1 .bee-block-4 h1,
+		.bee-row-3 .bee-col-1 .bee-block-4 h1 {
+			color: #ffffff;
+			font-size: 24px;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-5 h1,
+		.bee-row-3 .bee-col-1 .bee-block-5 h1 {
+			color: #ffffff;
+			font-size: 64px;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 h1 {
+			color: #19b7fb;
+			font-size: 21px;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-2 h1 {
+			color: #0d1f2e;
+			direction: ltr;
+			font-family: Poppins, sans-serif;
+			font-size: 40px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-3 h1,
+		.bee-row-7 .bee-col-2 .bee-block-3 h1,
+		.bee-row-7 .bee-col-3 .bee-block-3 h1 {
+			color: #071f2f;
+			direction: ltr;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-7 .bee-col-1 .bee-block-2 h1,
+		.bee-row-7 .bee-col-2 .bee-block-2 h1,
+		.bee-row-7 .bee-col-3 .bee-block-2 h1 {
+			color: #19b7fb;
+			direction: ltr;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-8 .bee-col-1 .bee-block-2 h1 {
+			color: #071f2f;
+			direction: ltr;
+			font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-1 .bee-col-1,
+			.bee-row-2 .bee-col-1,
+			.bee-row-3 .bee-col-1,
+			.bee-row-4 .bee-col-1,
+			.bee-row-4 .bee-col-2,
+			.bee-row-5 .bee-col-1,
+			.bee-row-6 .bee-col-1,
+			.bee-row-8 .bee-col-1 {
+				padding: 5px 20px !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 .bee-button-content,
+			.bee-row-2 .bee-col-1 .bee-block-6 .bee-button-content,
+			.bee-row-3 .bee-col-1 .bee-block-2 .bee-button-content,
+			.bee-row-5 .bee-col-1 .bee-block-4 .bee-button-content,
+			.bee-row-8 .bee-col-1 .bee-block-4 .bee-button-content {
+				font-size: initial !important;
+				line-height: normal !important;
+				width: 100% !important;
+				text-align: center !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 a,
+			.bee-row-1 .bee-col-1 .bee-block-2 span,
+			.bee-row-3 .bee-col-1 .bee-block-2 a,
+			.bee-row-3 .bee-col-1 .bee-block-2 span {
+				text-align: center !important;
+				font-size: 12px !important;
+				line-height: auto !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-4 h1,
+			.bee-row-2 .bee-col-1 .bee-block-4 h1,
+			.bee-row-3 .bee-col-1 .bee-block-4 h1 {
+				font-size: 22px
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-5,
+			.bee-row-3 .bee-col-1 .bee-block-5 {
+				padding: 50px 0
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-5 h1,
+			.bee-row-3 .bee-col-1 .bee-block-5 h1 {
+				font-size: 41px
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-9 {
+				height: 60px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-6,
+			.bee-row-2 .bee-col-1 .bee-block-8,
+			.bee-row-5 .bee-col-1 .bee-block-4,
+			.bee-row-5 .bee-col-1 .bee-block-6,
+			.bee-row-8 .bee-col-1 .bee-block-4 {
+				padding: 0 !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-8 .bee-button-content,
+			.bee-row-5 .bee-col-1 .bee-block-6 .bee-button-content {
+				font-size: initial !important;
+				line-height: normal !important;
+				text-align: center !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-6 a,
+			.bee-row-2 .bee-col-1 .bee-block-6 span,
+			.bee-row-2 .bee-col-1 .bee-block-8 a,
+			.bee-row-2 .bee-col-1 .bee-block-8 span,
+			.bee-row-5 .bee-col-1 .bee-block-4 a,
+			.bee-row-5 .bee-col-1 .bee-block-4 span,
+			.bee-row-5 .bee-col-1 .bee-block-6 a,
+			.bee-row-5 .bee-col-1 .bee-block-6 span,
+			.bee-row-8 .bee-col-1 .bee-block-4 a,
+			.bee-row-8 .bee-col-1 .bee-block-4 span {
+				text-align: center !important;
+				font-size: 18px !important;
+				line-height: auto !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-7 {
+				height: 100px !important
+			}
+
+			.bee-row-6 .bee-col-1 .bee-block-2 h1 {
+				font-size: 24px
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-2 h1,
+			.bee-row-7 .bee-col-2 .bee-block-2 h1,
+			.bee-row-7 .bee-col-3 .bee-block-2 h1 {
+				font-size: 17px
+			}
+
+			.bee-row-8 .bee-col-1 .bee-block-2 h1 {
+				font-size: 16px
+			}
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-2 a {
+			color: #0068a5
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bee-page-container">
+		<div class="bee-row bee-row-1">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-button">
+						<div style="font-size: 26px; background-color: #19b7fb; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; width: 65%; display: inline-block;"
+							class="bee-button-content"><span
+								style="word-break: break-word; font-size: 26px; line-height: 200%;">ATENÇÃO:
+								PLANO 5K MÊS COM FUNIS DE VENDAS</span></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer">
+						<div class="spacer" style="height:40px;"></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-heading">
+						<h1><strong>Plano prático para você gerar seus primeiros 5k de lucro mês com funis de vendas e
+								mix de produtos low ticket</strong> </h1>
+					</div>
+					<div class="bee-block bee-block-5 bee-heading">
+						<h1><strong>Bônus: Mentoria individual</strong> </h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-2">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-video">
+						<div style="padding:75% 0 0 0;position:relative;"><iframe
+								src="https://www.youtube.com/embed/m2pv1bzefQw?controls=0"
+								style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+								allow="fullscreen" allowfullscreen=""></iframe></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-heading">
+						<h1>Garanta a sua vaga na Mentoria com acesso a minha pessoa para ver seu negócio por dentro e
+							leve de bônus dois funis completos entregues pela nossa equipe de copywriters e gestores de
+							tráfego </h1>
+					</div>
+					<div class="bee-block bee-block-5 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-6 bee-button"><a
+							style="font-size: 20px; background-color: #47c838; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; width: 80%; display: inline-block;"
+							class="bee-button-content" href="https://chk.eduzz.com/1935999" target="_blank"><span
+								style="word-break: break-word; font-size: 20px; line-height: 200%;">EU QUERO ME TORNAR
+								MEMBRO!</span></a></div>
+					<div class="bee-block bee-block-7 bee-spacer">
+						<div class="spacer" style="height:30px;"></div>
+					</div>
+					<div class="bee-block bee-block-8 bee-button"><a
+							style="font-size: 20px; background-color: #47c838; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;"
+							class="bee-button-content"
+							href="https://api.whatsapp.com/send/?phone=5583994066143&amp;text&amp;type=phone_number&amp;app_absent=0"
+							target="_blank"><span style="word-break: break-word; font-size: 20px; line-height: 200%;">EU
+								QUERO CONVERSAR COM A EQUIPE</span></a></div>
+					<div class="bee-block bee-block-9 bee-spacer">
+						<div class="spacer" style="height:120px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-3">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+
+
+
+
+
+
+
+					<!----
+					<div class="bee-block bee-block-2 bee-button">
+						<div style="font-size: 26px; background-color: #19b7fb; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 5px; width: 65%; display: inline-block;"
+							class="bee-button-content"><span
+								style="word-break: break-word; font-size: 26px; line-height: 200%;">ATENÇÃO:�&nbsp;
+								MONEY MAKERS AI + BÔNUS</span></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer">
+						<div class="spacer" style="height:40px;"></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-heading">
+						<h1><strong>1 ANO DE COMUNIDADE. CALLS SEMANAIS, PACK DE CURSOS E O MAPA COMPLETO PARA GERAR
+								CAIXA, CRIAR NOVOS NEGÓCIOS E ESCALAR O SEU LUCRO COM A IA</strong> </h1>
+					</div>
+					<div class="bee-block bee-block-5 bee-heading">
+						<h1><strong>Bônus Imersão 6 dígitos com IA</strong> </h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-4">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h1><strong>A oferta irá encerrar em:</strong> </h1>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-html-block">
+						<style>
+							.countdown-container {
+								width: 100%;
+								display: -webkit-box;
+								display: -webkit-flex;
+								display: -ms-flexbox;
+								display: flex;
+								-webkit-box-pack: center;
+								-webkit-justify-content: center;
+								-ms-flex-pack: center;
+								justify-content: center;
+							}
+
+
+							.countdown-container img {
+								max-width: 100%;
+							}
+
+
+							data-styled.g13[id="sc-global-iErFET1"] {
+								content: "sc-global-iErFET1,"
+							}
+						</style>
+						<div class="countdown-container 8e85205d-8e37-405f-9f90-26537c05fe9d"
+							data-llbee-id="8e85205d-8e37-405f-9f90-26537c05fe9d" data-llbee-model="6"
+							data-llbee-script="6">
+							<div data-llbee-model-configs="" style="display: none;">
+								[{"id":"base-span-type-countdown","label":"span","type":"span","defaultValue":"Escolha o
+								tipo do contador:","value":"Escolha o tipo do
+								contador:"},{"id":"base-div-type-countdown","label":"Data para a
+								contagem","type":"div-wrapper-row","defaultValue":"","childs":[{"id":"base-button-type-countdown-1","label":"button","type":"button","defaultValue":"Terminar
+								na
+								data","buttonIcon":"CalendarTodayIcon","countdownType":"finish-on-date","isActive":true,"value":"Terminar
+								na
+								data"},{"id":"base-button-type-countdown-2","label":"button","type":"button","defaultValue":"Perpétuo","buttonIcon":"TimerIcon","countdownType":"perpetual","isActive":false,"value":"Perpétuo"}],"value":""},{"id":"time-end-date-finish-on-date","label":"Data
+								para a
+								contagem","type":"date","defaultValue":"","value":"2025-02-20"},{"id":"div-time-end-finish-on-date","label":"Data
+								para a
+								contagem","type":"div-wrapper-row","defaultValue":"","childs":[{"id":"time-end-hour-finish-on-date","label":"Horas","type":"text","defaultValue":"0","useOnlyNumber":true,"maxLength":2,"value":"0"},{"id":"time-end-minute-finish-on-date","label":"Minutos","type":"text","defaultValue":"0","useOnlyNumber":true,"maxLength":2,"value":"0"},{"id":"time-end-seconds-finish-on-date","label":"Segundos","type":"text","defaultValue":"0","useOnlyNumber":true,"maxLength":2,"value":"0"}],"value":""},{"id":"span-countdown-type-finish-on-date","label":"span","type":"span","defaultValue":"Estilo
+								do contador:","value":"Estilo do
+								contador:"},{"id":"div-font-family-finish-on-date","label":"Data para a
+								contagem","type":"div-wrapper-row","defaultValue":"","childs":[{"id":"font-family-finish-on-date","label":"Fonte
+								do
+								contador","type":"select","options":[{"value":"Arial","label":"Arial"},{"value":"Arial
+								Black","label":"Arial
+								Black"},{"value":"Arimo-Bold","label":"Arimo-Bold"},{"value":"Arsenal
+								Bold","label":"Arsenal Bold"},{"value":"Arsenal Regular","label":"Arsenal
+								Regular"},{"value":"Astronaut III","label":"Astronaut
+								III"},{"value":"AvenirNext","label":"AvenirNext"},{"value":"Balls on the
+								rampage","label":"Balls on the
+								rampage"},{"value":"BebasNeue","label":"BebasNeue"},{"value":"bitrix_captcha","label":"bitrix_captcha"},{"value":"cac_champagne","label":"cac_champagne"},{"value":"ClaireHandBold","label":"ClaireHandBold"},{"value":"Codystar","label":"Codystar"},{"value":"Comfortaa-Bold","label":"Comfortaa-Bold"},{"value":"Comic
+								Sans MS","label":"Comic Sans MS"},{"value":"Courier New","label":"Courier
+								New"},{"value":"Crysta","label":"Crysta"},{"value":"csnpwdtNFI","label":"csnpwdtNFI"},{"value":"Curlz
+								MT","label":"Curlz
+								MT"},{"value":"DejaVuSansCondensed","label":"DejaVuSansCondensed"},{"value":"Depressionist
+								3 Revisited","label":"Depressionist 3 Revisited"},{"value":"Digital
+								Counter","label":"Digital Counter"},{"value":"Droid Serif Bold","label":"Droid Serif
+								Bold"},{"value":"Droid Serif Regular","label":"Droid Serif Regular"},{"value":"fighting
+								spirit TBS","label":"fighting spirit
+								TBS"},{"value":"FreeSans","label":"FreeSans"},{"value":"Funny Kid","label":"Funny
+								Kid"},{"value":"Georgia","label":"Georgia"},{"value":"Gilroy Bold","label":"Gilroy
+								Bold"},{"value":"Gilroy Light","label":"Gilroy Light"},{"value":"Gotham
+								Bold","label":"Gotham Bold"},{"value":"Gotham Medium","label":"Gotham
+								Medium"},{"value":"Helvetica","label":"Helvetica"},{"value":"Helvetica-Narrow","label":"Helvetica-Narrow"},{"value":"Helvetica-Narrow
+								Bold","label":"Helvetica-Narrow
+								Bold"},{"value":"HIGHSPEED","label":"HIGHSPEED"},{"value":"Impact","label":"Impact"},{"value":"Inter
+								Black","label":"Inter Black"},{"value":"Inter Bold","label":"Inter
+								Bold"},{"value":"Inter Light","label":"Inter Light"},{"value":"Inter
+								Regular","label":"Inter
+								Regular"},{"value":"KaushanScript","label":"KaushanScript"},{"value":"Lucida
+								Console","label":"Lucida
+								Console"},{"value":"Lucida-grande","label":"Lucida-grande"},{"value":"Marketing
+								Script","label":"Marketing Script"},{"value":"metal lord","label":"metal
+								lord"},{"value":"Midnight Blues","label":"Midnight Blues"},{"value":"MS Sans
+								Serif","label":"MS Sans Serif"},{"value":"MS Serif","label":"MS Serif"},{"value":"Myriad
+								Pro Bold","label":"Myriad Pro
+								Bold"},{"value":"MyriadApple","label":"MyriadApple"},{"value":"MyriadPro
+								Regular","label":"MyriadPro Regular"},{"value":"MyriadPro Semibold","label":"MyriadPro
+								Semibold"},{"value":"Oleo Script","label":"Oleo
+								Script"},{"value":"OpenSans-Bold","label":"OpenSans-Bold"},{"value":"OpenSans-ExtraBold","label":"OpenSans-ExtraBold"},{"value":"OpenSans-Light","label":"OpenSans-Light"},{"value":"OpenSans-Regular","label":"OpenSans-Regular"},{"value":"OpenSans-Semibold","label":"OpenSans-Semibold"},{"value":"Palatino
+								Linotype","label":"Palatino Linotype"},{"value":"Palatino Linotype
+								Bold","label":"Palatino Linotype
+								Bold"},{"value":"PROG.BOT","label":"PROG.BOT"},{"value":"PT Sans Bold","label":"PT Sans
+								Bold"},{"value":"PT Sans Regular","label":"PT Sans
+								Regular"},{"value":"Radioland","label":"Radioland"},{"value":"Rajdhani-Bold","label":"Rajdhani-Bold"},{"value":"Roboto-Black","label":"Roboto-Black"},{"value":"Roboto-Bold","label":"Roboto-Bold"},{"value":"Roboto-Light","label":"Roboto-Light"},{"value":"Roboto-Medium","label":"Roboto-Medium"},{"value":"Roboto-Regular","label":"Roboto-Regular"},{"value":"Roboto-Thin","label":"Roboto-Thin"},{"value":"RobotoCondensed-Bold","label":"RobotoCondensed-Bold"},{"value":"RobotoCondensed-Light","label":"RobotoCondensed-Light"},{"value":"RobotoCondensed-Regular","label":"RobotoCondensed-Regular"},{"value":"Saira-Bold","label":"Saira-Bold"},{"value":"Saira-Medium","label":"Saira-Medium"},{"value":"Shlop
+								rg","label":"Shlop rg"},{"value":"Spacedock Stencil","label":"Spacedock
+								Stencil"},{"value":"SpicyRice","label":"SpicyRice"},{"value":"Stride with Me
+								Now","label":"Stride with Me Now"},{"value":"Tahoma","label":"Tahoma"},{"value":"Tahoma
+								Bold","label":"Tahoma Bold"},{"value":"Times New Roman","label":"Times New
+								Roman"},{"value":"Trebuchet MS","label":"Trebuchet MS"},{"value":"Tungsten
+								Medium","label":"Tungsten Medium"},{"value":"Tungsten Semibold","label":"Tungsten
+								Semibold"},{"value":"Verdana","label":"Verdana"},{"value":"VPS Son La Hoa","label":"VPS
+								Son La
+								Hoa"}],"defaultValue":"Arial","value":"Arial"},{"id":"font-size-finish-on-date","label":"px","type":"number","sufix":"px","defaultValue":"36","value":"36"}],"value":""},{"id":"div-label-font-family-finish-on-date","label":"Data
+								para a
+								contagem","type":"div-wrapper-row","defaultValue":"","childs":[{"id":"label-font-family-finish-on-date","label":"Fonte
+								da
+								etiqueta","type":"select","options":[{"value":"Arial","label":"Arial"},{"value":"Arial
+								Black","label":"Arial
+								Black"},{"value":"Arimo-Bold","label":"Arimo-Bold"},{"value":"Arsenal
+								Bold","label":"Arsenal Bold"},{"value":"Arsenal Regular","label":"Arsenal
+								Regular"},{"value":"Astronaut III","label":"Astronaut
+								III"},{"value":"AvenirNext","label":"AvenirNext"},{"value":"Balls on the
+								rampage","label":"Balls on the
+								rampage"},{"value":"BebasNeue","label":"BebasNeue"},{"value":"bitrix_captcha","label":"bitrix_captcha"},{"value":"cac_champagne","label":"cac_champagne"},{"value":"ClaireHandBold","label":"ClaireHandBold"},{"value":"Codystar","label":"Codystar"},{"value":"Comfortaa-Bold","label":"Comfortaa-Bold"},{"value":"Comic
+								Sans MS","label":"Comic Sans MS"},{"value":"Courier New","label":"Courier
+								New"},{"value":"Crysta","label":"Crysta"},{"value":"csnpwdtNFI","label":"csnpwdtNFI"},{"value":"Curlz
+								MT","label":"Curlz
+								MT"},{"value":"DejaVuSansCondensed","label":"DejaVuSansCondensed"},{"value":"Depressionist
+								3 Revisited","label":"Depressionist 3 Revisited"},{"value":"Digital
+								Counter","label":"Digital Counter"},{"value":"Droid Serif Bold","label":"Droid Serif
+								Bold"},{"value":"Droid Serif Regular","label":"Droid Serif Regular"},{"value":"fighting
+								spirit TBS","label":"fighting spirit
+								TBS"},{"value":"FreeSans","label":"FreeSans"},{"value":"Funny Kid","label":"Funny
+								Kid"},{"value":"Georgia","label":"Georgia"},{"value":"Gilroy Bold","label":"Gilroy
+								Bold"},{"value":"Gilroy Light","label":"Gilroy Light"},{"value":"Gotham
+								Bold","label":"Gotham Bold"},{"value":"Gotham Medium","label":"Gotham
+								Medium"},{"value":"Helvetica","label":"Helvetica"},{"value":"Helvetica-Narrow","label":"Helvetica-Narrow"},{"value":"Helvetica-Narrow
+								Bold","label":"Helvetica-Narrow
+								Bold"},{"value":"HIGHSPEED","label":"HIGHSPEED"},{"value":"Impact","label":"Impact"},{"value":"Inter
+								Black","label":"Inter Black"},{"value":"Inter Bold","label":"Inter
+								Bold"},{"value":"Inter Light","label":"Inter Light"},{"value":"Inter
+								Regular","label":"Inter
+								Regular"},{"value":"KaushanScript","label":"KaushanScript"},{"value":"Lucida
+								Console","label":"Lucida
+								Console"},{"value":"Lucida-grande","label":"Lucida-grande"},{"value":"Marketing
+								Script","label":"Marketing Script"},{"value":"metal lord","label":"metal
+								lord"},{"value":"Midnight Blues","label":"Midnight Blues"},{"value":"MS Sans
+								Serif","label":"MS Sans Serif"},{"value":"MS Serif","label":"MS Serif"},{"value":"Myriad
+								Pro Bold","label":"Myriad Pro
+								Bold"},{"value":"MyriadApple","label":"MyriadApple"},{"value":"MyriadPro
+								Regular","label":"MyriadPro Regular"},{"value":"MyriadPro Semibold","label":"MyriadPro
+								Semibold"},{"value":"Oleo Script","label":"Oleo
+								Script"},{"value":"OpenSans-Bold","label":"OpenSans-Bold"},{"value":"OpenSans-ExtraBold","label":"OpenSans-ExtraBold"},{"value":"OpenSans-Light","label":"OpenSans-Light"},{"value":"OpenSans-Regular","label":"OpenSans-Regular"},{"value":"OpenSans-Semibold","label":"OpenSans-Semibold"},{"value":"Palatino
+								Linotype","label":"Palatino Linotype"},{"value":"Palatino Linotype
+								Bold","label":"Palatino Linotype
+								Bold"},{"value":"PROG.BOT","label":"PROG.BOT"},{"value":"PT Sans Bold","label":"PT Sans
+								Bold"},{"value":"PT Sans Regular","label":"PT Sans
+								Regular"},{"value":"Radioland","label":"Radioland"},{"value":"Rajdhani-Bold","label":"Rajdhani-Bold"},{"value":"Roboto-Black","label":"Roboto-Black"},{"value":"Roboto-Bold","label":"Roboto-Bold"},{"value":"Roboto-Light","label":"Roboto-Light"},{"value":"Roboto-Medium","label":"Roboto-Medium"},{"value":"Roboto-Regular","label":"Roboto-Regular"},{"value":"Roboto-Thin","label":"Roboto-Thin"},{"value":"RobotoCondensed-Bold","label":"RobotoCondensed-Bold"},{"value":"RobotoCondensed-Light","label":"RobotoCondensed-Light"},{"value":"RobotoCondensed-Regular","label":"RobotoCondensed-Regular"},{"value":"Saira-Bold","label":"Saira-Bold"},{"value":"Saira-Medium","label":"Saira-Medium"},{"value":"Shlop
+								rg","label":"Shlop rg"},{"value":"Spacedock Stencil","label":"Spacedock
+								Stencil"},{"value":"SpicyRice","label":"SpicyRice"},{"value":"Stride with Me
+								Now","label":"Stride with Me Now"},{"value":"Tahoma","label":"Tahoma"},{"value":"Tahoma
+								Bold","label":"Tahoma Bold"},{"value":"Times New Roman","label":"Times New
+								Roman"},{"value":"Trebuchet MS","label":"Trebuchet MS"},{"value":"Tungsten
+								Medium","label":"Tungsten Medium"},{"value":"Tungsten Semibold","label":"Tungsten
+								Semibold"},{"value":"Verdana","label":"Verdana"},{"value":"VPS Son La Hoa","label":"VPS
+								Son La
+								Hoa"}],"defaultValue":"Arial","value":"Arial"},{"id":"label-font-size-finish-on-date","label":"px","type":"number","sufix":"px","defaultValue":"11","value":"11"}],"value":""},{"id":"color-text-finish-on-date","label":"Cor
+								do
+								texto","type":"color","defaultValue":"#ffffff","useHex":true,"value":"#ffffff"},{"id":"color-primary-finish-on-date","label":"Cor
+								principal","type":"color","defaultValue":"#968f8f","useHex":true,"value":"#ffffff"},{"id":"color-bg-finish-on-date","label":"Cor
+								do
+								fundo","type":"color","defaultValue":"#252830","useHex":true,"value":"#0d1f2e"},{"id":"span-countdown-additional-settings-finish-on-date","label":"span","type":"span","defaultValue":"Configurações
+								adicionais:","value":"Configurações
+								adicionais:"},{"id":"timezone-finish-on-date","label":"Horário
+								local","type":"select","options":[{"value":"America/Sao_Paulo","label":"(GMT-03:00) Sao
+								Paulo"},{"value":"Pacific/Midway","label":"(GMT-11:00)
+								Midway"},{"value":"Pacific/Niue","label":"(GMT-11:00)
+								Niue"},{"value":"Pacific/Pago_Pago","label":"(GMT-11:00) Pago
+								Pago"},{"value":"Pacific/Honolulu","label":"(GMT-10:00) Hawaii
+								Time"},{"value":"Pacific/Rarotonga","label":"(GMT-10:00)
+								Rarotonga"},{"value":"Pacific/Tahiti","label":"(GMT-10:00)
+								Tahiti"},{"value":"Pacific/Marquesas","label":"(GMT-09:30)
+								Marquesas"},{"value":"America/Anchorage","label":"(GMT-09:00) Alaska
+								Time"},{"value":"Pacific/Gambier","label":"(GMT-09:00)
+								Gambier"},{"value":"America/Los_Angeles","label":"(GMT-08:00) Pacific
+								Time"},{"value":"America/Tijuana","label":"(GMT-08:00) Pacific Time -
+								Tijuana"},{"value":"America/Vancouver","label":"(GMT-08:00) Pacific Time -
+								Vancouver"},{"value":"America/Whitehorse","label":"(GMT-08:00) Pacific Time -
+								Whitehorse"},{"value":"Pacific/Pitcairn","label":"(GMT-08:00)
+								Pitcairn"},{"value":"America/Dawson_Creek","label":"(GMT-07:00) Mountain Time - Dawson
+								Creek"},{"value":"America/Denver","label":"(GMT-07:00) Mountain
+								Time"},{"value":"America/Edmonton","label":"(GMT-07:00) Mountain Time -
+								Edmonton"},{"value":"America/Hermosillo","label":"(GMT-07:00) Mountain Time -
+								Hermosillo"},{"value":"America/Mazatlan","label":"(GMT-07:00) Mountain Time - Chihuahua,
+								Mazatlan"},{"value":"America/Phoenix","label":"(GMT-07:00) Mountain Time -
+								Arizona"},{"value":"America/Yellowknife","label":"(GMT-07:00) Mountain Time -
+								Yellowknife"},{"value":"America/Belize","label":"(GMT-06:00)
+								Belize"},{"value":"America/Chicago","label":"(GMT-06:00) Central
+								Time"},{"value":"America/Costa_Rica","label":"(GMT-06:00) Costa
+								Rica"},{"value":"America/El_Salvador","label":"(GMT-06:00) El
+								Salvador"},{"value":"America/Guatemala","label":"(GMT-06:00)
+								Guatemala"},{"value":"America/Managua","label":"(GMT-06:00)
+								Managua"},{"value":"America/Mexico_City","label":"(GMT-06:00) Central Time - Mexico
+								City"},{"value":"America/Regina","label":"(GMT-06:00) Central Time -
+								Regina"},{"value":"America/Tegucigalpa","label":"(GMT-06:00) Central Time -
+								Tegucigalpa"},{"value":"America/Winnipeg","label":"(GMT-06:00) Central Time -
+								Winnipeg"},{"value":"Pacific/Easter","label":"(GMT-06:00) Easter
+								Island"},{"value":"Pacific/Galapagos","label":"(GMT-06:00)
+								Galapagos"},{"value":"America/Bogota","label":"(GMT-05:00)
+								Bogota"},{"value":"America/Cayman","label":"(GMT-05:00)
+								Cayman"},{"value":"America/Guayaquil","label":"(GMT-05:00)
+								Guayaquil"},{"value":"America/Havana","label":"(GMT-05:00)
+								Havana"},{"value":"America/Iqaluit","label":"(GMT-05:00) Eastern Time -
+								Iqaluit"},{"value":"America/Jamaica","label":"(GMT-05:00)
+								Jamaica"},{"value":"America/Lima","label":"(GMT-05:00)
+								Lima"},{"value":"America/Montreal","label":"(GMT-05:00) Eastern Time -
+								Montreal"},{"value":"America/Nassau","label":"(GMT-05:00)
+								Nassau"},{"value":"America/New_York","label":"(GMT-05:00) Eastern
+								Time"},{"value":"America/Panama","label":"(GMT-05:00)
+								Panama"},{"value":"America/Port-au-Prince","label":"(GMT-05:00)
+								Port-au-Prince"},{"value":"America/Rio_Branco","label":"(GMT-05:00) Rio
+								Branco"},{"value":"America/Toronto","label":"(GMT-05:00) Eastern Time -
+								Toronto"},{"value":"America/Caracas","label":"(GMT-04:30)
+								Caracas"},{"value":"America/Antigua","label":"(GMT-04:00)
+								Antigua"},{"value":"America/Asuncion","label":"(GMT-04:00)
+								Asuncion"},{"value":"America/Barbados","label":"(GMT-04:00)
+								Barbados"},{"value":"America/Boa_Vista","label":"(GMT-04:00) Boa
+								Vista"},{"value":"America/Campo_Grande","label":"(GMT-04:00) Campo
+								Grande"},{"value":"America/Cuiaba","label":"(GMT-04:00)
+								Cuiaba"},{"value":"America/Curacao","label":"(GMT-04:00)
+								Curacao"},{"value":"America/Grand_Turk","label":"(GMT-04:00) Grand
+								Turk"},{"value":"America/Guyana","label":"(GMT-04:00)
+								Guyana"},{"value":"America/Halifax","label":"(GMT-04:00) Atlantic Time -
+								Halifax"},{"value":"America/La_Paz","label":"(GMT-04:00) La
+								Paz"},{"value":"America/Manaus","label":"(GMT-04:00)
+								Manaus"},{"value":"America/Martinique","label":"(GMT-04:00)
+								Martinique"},{"value":"America/Port_of_Spain","label":"(GMT-04:00) Port of
+								Spain"},{"value":"America/Porto_Velho","label":"(GMT-04:00) Porto
+								Velho"},{"value":"America/Puerto_Rico","label":"(GMT-04:00) Puerto
+								Rico"},{"value":"America/Santiago","label":"(GMT-04:00)
+								Santiago"},{"value":"America/Santo_Domingo","label":"(GMT-04:00) Santo
+								Domingo"},{"value":"America/Thule","label":"(GMT-04:00)
+								Thule"},{"value":"Antarctica/Palmer","label":"(GMT-04:00)
+								Palmer"},{"value":"Atlantic/Bermuda","label":"(GMT-04:00)
+								Bermuda"},{"value":"America/St_Johns","label":"(GMT-03:30) Newfoundland Time - St.
+								Johns"},{"value":"America/Araguaina","label":"(GMT-03:00)
+								Araguaina"},{"value":"America/Argentina/Buenos_Aires","label":"(GMT-03:00) Buenos
+								Aires"},{"value":"America/Bahia","label":"(GMT-03:00)
+								Salvador"},{"value":"America/Belem","label":"(GMT-03:00)
+								Belem"},{"value":"America/Cayenne","label":"(GMT-03:00)
+								Cayenne"},{"value":"America/Fortaleza","label":"(GMT-03:00)
+								Fortaleza"},{"value":"America/Godthab","label":"(GMT-03:00)
+								Godthab"},{"value":"America/Maceio","label":"(GMT-03:00)
+								Maceio"},{"value":"America/Miquelon","label":"(GMT-03:00)
+								Miquelon"},{"value":"America/Montevideo","label":"(GMT-03:00)
+								Montevideo"},{"value":"America/Paramaribo","label":"(GMT-03:00)
+								Paramaribo"},{"value":"America/Recife","label":"(GMT-03:00)
+								Recife"},{"value":"America/Sao_Paulo","label":"(GMT-03:00) Sao
+								Paulo"},{"value":"Antarctica/Rothera","label":"(GMT-03:00)
+								Rothera"},{"value":"Atlantic/Stanley","label":"(GMT-03:00)
+								Stanley"},{"value":"America/Noronha","label":"(GMT-02:00)
+								Noronha"},{"value":"Atlantic/South_Georgia","label":"(GMT-02:00) South
+								Georgia"},{"value":"America/Scoresbysund","label":"(GMT-01:00)
+								Scoresbysund"},{"value":"Atlantic/Azores","label":"(GMT-01:00)
+								Azores"},{"value":"Atlantic/Cape_Verde","label":"(GMT-01:00) Cape
+								Verde"},{"value":"Africa/Abidjan","label":"(GMT+00:00)
+								Abidjan"},{"value":"Africa/Accra","label":"(GMT+00:00)
+								Accra"},{"value":"Africa/Bissau","label":"(GMT+00:00)
+								Bissau"},{"value":"Africa/Casablanca","label":"(GMT+00:00)
+								Casablanca"},{"value":"Africa/El_Aaiun","label":"(GMT+00:00) El
+								Aaiun"},{"value":"Africa/Monrovia","label":"(GMT+00:00)
+								Monrovia"},{"value":"America/Danmarkshavn","label":"(GMT+00:00)
+								Danmarkshavn"},{"value":"Atlantic/Canary","label":"(GMT+00:00) Canary
+								Islands"},{"value":"Atlantic/Faroe","label":"(GMT+00:00)
+								Faeroe"},{"value":"Atlantic/Reykjavik","label":"(GMT+00:00)
+								Reykjavik"},{"value":"Etc/GMT","label":"(GMT+00:00) GMT (no daylight
+								saving)"},{"value":"Europe/Dublin","label":"(GMT+00:00)
+								Dublin"},{"value":"Europe/Lisbon","label":"(GMT+00:00)
+								Lisbon"},{"value":"Europe/London","label":"(GMT+00:00)
+								London"},{"value":"Africa/Algiers","label":"(GMT+01:00)
+								Algiers"},{"value":"Africa/Ceuta","label":"(GMT+01:00)
+								Ceuta"},{"value":"Africa/Lagos","label":"(GMT+01:00)
+								Lagos"},{"value":"Africa/Ndjamena","label":"(GMT+01:00)
+								Ndjamena"},{"value":"Africa/Tunis","label":"(GMT+01:00)
+								Tunis"},{"value":"Africa/Windhoek","label":"(GMT+01:00)
+								Windhoek"},{"value":"Europe/Amsterdam","label":"(GMT+01:00)
+								Amsterdam"},{"value":"Europe/Andorra","label":"(GMT+01:00)
+								Andorra"},{"value":"Europe/Belgrade","label":"(GMT+01:00) Central European Time -
+								Belgrade"},{"value":"Europe/Berlin","label":"(GMT+01:00)
+								Berlin"},{"value":"Europe/Brussels","label":"(GMT+01:00)
+								Brussels"},{"value":"Europe/Budapest","label":"(GMT+01:00)
+								Budapest"},{"value":"Europe/Copenhagen","label":"(GMT+01:00)
+								Copenhagen"},{"value":"Europe/Gibraltar","label":"(GMT+01:00)
+								Gibraltar"},{"value":"Europe/Luxembourg","label":"(GMT+01:00)
+								Luxembourg"},{"value":"Europe/Madrid","label":"(GMT+01:00)
+								Madrid"},{"value":"Europe/Malta","label":"(GMT+01:00)
+								Malta"},{"value":"Europe/Monaco","label":"(GMT+01:00)
+								Monaco"},{"value":"Europe/Oslo","label":"(GMT+01:00)
+								Oslo"},{"value":"Europe/Paris","label":"(GMT+01:00)
+								Paris"},{"value":"Europe/Prague","label":"(GMT+01:00) Central European Time -
+								Prague"},{"value":"Europe/Rome","label":"(GMT+01:00)
+								Rome"},{"value":"Europe/Stockholm","label":"(GMT+01:00)
+								Stockholm"},{"value":"Europe/Tirane","label":"(GMT+01:00)
+								Tirane"},{"value":"Europe/Vienna","label":"(GMT+01:00)
+								Vienna"},{"value":"Europe/Warsaw","label":"(GMT+01:00)
+								Warsaw"},{"value":"Europe/Zurich","label":"(GMT+01:00)
+								Zurich"},{"value":"Africa/Cairo","label":"(GMT+02:00)
+								Cairo"},{"value":"Africa/Johannesburg","label":"(GMT+02:00)
+								Johannesburg"},{"value":"Africa/Maputo","label":"(GMT+02:00)
+								Maputo"},{"value":"Africa/Tripoli","label":"(GMT+02:00)
+								Tripoli"},{"value":"Asia/Amman","label":"(GMT+02:00)
+								Amman"},{"value":"Asia/Beirut","label":"(GMT+02:00)
+								Beirut"},{"value":"Asia/Damascus","label":"(GMT+02:00)
+								Damascus"},{"value":"Asia/Gaza","label":"(GMT+02:00)
+								Gaza"},{"value":"Asia/Jerusalem","label":"(GMT+02:00)
+								Jerusalem"},{"value":"Asia/Nicosia","label":"(GMT+02:00)
+								Nicosia"},{"value":"Europe/Athens","label":"(GMT+02:00)
+								Athens"},{"value":"Europe/Bucharest","label":"(GMT+02:00)
+								Bucharest"},{"value":"Europe/Chisinau","label":"(GMT+02:00)
+								Chisinau"},{"value":"Europe/Helsinki","label":"(GMT+02:00)
+								Helsinki"},{"value":"Europe/Istanbul","label":"(GMT+02:00)
+								Istanbul"},{"value":"Europe/Kaliningrad","label":"(GMT+02:00) Moscow-01 -
+								Kaliningrad"},{"value":"Europe/Kiev","label":"(GMT+02:00)
+								Kiev"},{"value":"Europe/Riga","label":"(GMT+02:00)
+								Riga"},{"value":"Europe/Sofia","label":"(GMT+02:00)
+								Sofia"},{"value":"Europe/Tallinn","label":"(GMT+02:00)
+								Tallinn"},{"value":"Europe/Vilnius","label":"(GMT+02:00)
+								Vilnius"},{"value":"Africa/Addis_Ababa","label":"(GMT+03:00) Addis
+								Ababa"},{"value":"Africa/Asmara","label":"(GMT+03:00)
+								Asmera"},{"value":"Africa/Dar_es_Salaam","label":"(GMT+03:00) Dar es
+								Salaam"},{"value":"Africa/Djibouti","label":"(GMT+03:00)
+								Djibouti"},{"value":"Africa/Kampala","label":"(GMT+03:00)
+								Kampala"},{"value":"Africa/Khartoum","label":"(GMT+03:00)
+								Khartoum"},{"value":"Africa/Mogadishu","label":"(GMT+03:00)
+								Mogadishu"},{"value":"Africa/Nairobi","label":"(GMT+03:00)
+								Nairobi"},{"value":"Antarctica/Syowa","label":"(GMT+03:00)
+								Syowa"},{"value":"Asia/Aden","label":"(GMT+03:00)
+								Aden"},{"value":"Asia/Baghdad","label":"(GMT+03:00)
+								Baghdad"},{"value":"Asia/Bahrain","label":"(GMT+03:00)
+								Bahrain"},{"value":"Asia/Kuwait","label":"(GMT+03:00)
+								Kuwait"},{"value":"Asia/Qatar","label":"(GMT+03:00)
+								Qatar"},{"value":"Asia/Riyadh","label":"(GMT+03:00)
+								Riyadh"},{"value":"Europe/Minsk","label":"(GMT+03:00)
+								Minsk"},{"value":"Europe/Moscow","label":"(GMT+03:00)
+								Moscow+00"},{"value":"Indian/Antananarivo","label":"(GMT+03:00)
+								Antananarivo"},{"value":"Indian/Comoro","label":"(GMT+03:00)
+								Comoro"},{"value":"Indian/Mayotte","label":"(GMT+03:00)
+								Mayotte"},{"value":"Asia/Tehran","label":"(GMT+03:30)
+								Tehran"},{"value":"Asia/Baku","label":"(GMT+04:00)
+								Baku"},{"value":"Asia/Dubai","label":"(GMT+04:00)
+								Dubai"},{"value":"Asia/Muscat","label":"(GMT+04:00)
+								Muscat"},{"value":"Asia/Tbilisi","label":"(GMT+04:00)
+								Tbilisi"},{"value":"Asia/Yerevan","label":"(GMT+04:00)
+								Yerevan"},{"value":"Europe/Samara","label":"(GMT+04:00) Moscow+00 -
+								Samara"},{"value":"Indian/Mahe","label":"(GMT+04:00)
+								Mahe"},{"value":"Indian/Mauritius","label":"(GMT+04:00)
+								Mauritius"},{"value":"Indian/Reunion","label":"(GMT+04:00)
+								Reunion"},{"value":"Asia/Kabul","label":"(GMT+04:30)
+								Kabul"},{"value":"Antarctica/Mawson","label":"(GMT+05:00)
+								Mawson"},{"value":"Asia/Aqtau","label":"(GMT+05:00)
+								Aqtau"},{"value":"Asia/Aqtobe","label":"(GMT+05:00)
+								Aqtobe"},{"value":"Asia/Ashgabat","label":"(GMT+05:00)
+								Ashgabat"},{"value":"Asia/Dushanbe","label":"(GMT+05:00)
+								Dushanbe"},{"value":"Asia/Karachi","label":"(GMT+05:00)
+								Karachi"},{"value":"Asia/Tashkent","label":"(GMT+05:00)
+								Tashkent"},{"value":"Asia/Yekaterinburg","label":"(GMT+05:00) Moscow+02 -
+								Yekaterinburg"},{"value":"Indian/Kerguelen","label":"(GMT+05:00)
+								Kerguelen"},{"value":"Indian/Maldives","label":"(GMT+05:00)
+								Maldives"},{"value":"Asia/Calcutta","label":"(GMT+05:30) India Standard
+								Time"},{"value":"Asia/Colombo","label":"(GMT+05:30)
+								Colombo"},{"value":"Asia/Katmandu","label":"(GMT+05:45)
+								Katmandu"},{"value":"Antarctica/Vostok","label":"(GMT+06:00)
+								Vostok"},{"value":"Asia/Almaty","label":"(GMT+06:00)
+								Almaty"},{"value":"Asia/Bishkek","label":"(GMT+06:00)
+								Bishkek"},{"value":"Asia/Dhaka","label":"(GMT+06:00)
+								Dhaka"},{"value":"Asia/Omsk","label":"(GMT+06:00) Moscow+03 - Omsk,
+								Novosibirsk"},{"value":"Asia/Thimphu","label":"(GMT+06:00)
+								Thimphu"},{"value":"Indian/Chagos","label":"(GMT+06:00)
+								Chagos"},{"value":"Asia/Rangoon","label":"(GMT+06:30)
+								Rangoon"},{"value":"Indian/Cocos","label":"(GMT+06:30)
+								Cocos"},{"value":"Antarctica/Davis","label":"(GMT+07:00)
+								Davis"},{"value":"Asia/Bangkok","label":"(GMT+07:00)
+								Bangkok"},{"value":"Asia/Hovd","label":"(GMT+07:00)
+								Hovd"},{"value":"Asia/Jakarta","label":"(GMT+07:00)
+								Jakarta"},{"value":"Asia/Krasnoyarsk","label":"(GMT+07:00) Moscow+04 -
+								Krasnoyarsk"},{"value":"Asia/Saigon","label":"(GMT+07:00)
+								Hanoi"},{"value":"Indian/Christmas","label":"(GMT+07:00)
+								Christmas"},{"value":"Antarctica/Casey","label":"(GMT+08:00)
+								Casey"},{"value":"Asia/Brunei","label":"(GMT+08:00)
+								Brunei"},{"value":"Asia/Choibalsan","label":"(GMT+08:00)
+								Choibalsan"},{"value":"Asia/Hong_Kong","label":"(GMT+08:00) Hong
+								Kong"},{"value":"Asia/Irkutsk","label":"(GMT+08:00) Moscow+05 -
+								Irkutsk"},{"value":"Asia/Kuala_Lumpur","label":"(GMT+08:00) Kuala
+								Lumpur"},{"value":"Asia/Macau","label":"(GMT+08:00)
+								Macau"},{"value":"Asia/Makassar","label":"(GMT+08:00)
+								Makassar"},{"value":"Asia/Manila","label":"(GMT+08:00)
+								Manila"},{"value":"Asia/Shanghai","label":"(GMT+08:00) China Time -
+								Beijing"},{"value":"Asia/Singapore","label":"(GMT+08:00)
+								Singapore"},{"value":"Asia/Taipei","label":"(GMT+08:00)
+								Taipei"},{"value":"Asia/Ulaanbaatar","label":"(GMT+08:00)
+								Ulaanbaatar"},{"value":"Australia/Perth","label":"(GMT+08:00) Western Time -
+								Perth"},{"value":"Asia/Dili","label":"(GMT+09:00)
+								Dili"},{"value":"Asia/Jayapura","label":"(GMT+09:00)
+								Jayapura"},{"value":"Asia/Pyongyang","label":"(GMT+09:00)
+								Pyongyang"},{"value":"Asia/Seoul","label":"(GMT+09:00)
+								Seoul"},{"value":"Asia/Tokyo","label":"(GMT+09:00)
+								Tokyo"},{"value":"Asia/Yakutsk","label":"(GMT+09:00) Moscow+06 -
+								Yakutsk"},{"value":"Pacific/Palau","label":"(GMT+09:00)
+								Palau"},{"value":"Australia/Adelaide","label":"(GMT+09:30) Central Time -
+								Adelaide"},{"value":"Australia/Darwin","label":"(GMT+09:30) Central Time -
+								Darwin"},{"value":"Antarctica/DumontDUrville","label":"(GMT+10:00) Dumont
+								D'Urville"},{"value":"Asia/Magadan","label":"(GMT+10:00) Moscow+08 -
+								Magadan"},{"value":"Asia/Vladivostok","label":"(GMT+10:00) Moscow+07 -
+								Yuzhno-Sakhalinsk"},{"value":"Australia/Brisbane","label":"(GMT+10:00) Eastern Time -
+								Brisbane"},{"value":"Australia/Hobart","label":"(GMT+10:00) Eastern Time -
+								Hobart"},{"value":"Australia/Sydney","label":"(GMT+10:00) Eastern Time - Melbourne,
+								Sydney"},{"value":"Pacific/Chuuk","label":"(GMT+10:00)
+								Truk"},{"value":"Pacific/Guam","label":"(GMT+10:00)
+								Guam"},{"value":"Pacific/Port_Moresby","label":"(GMT+10:00) Port
+								Moresby"},{"value":"Pacific/Saipan","label":"(GMT+10:00)
+								Saipan"},{"value":"Pacific/Efate","label":"(GMT+11:00)
+								Efate"},{"value":"Pacific/Guadalcanal","label":"(GMT+11:00)
+								Guadalcanal"},{"value":"Pacific/Kosrae","label":"(GMT+11:00)
+								Kosrae"},{"value":"Pacific/Noumea","label":"(GMT+11:00)
+								Noumea"},{"value":"Pacific/Pohnpei","label":"(GMT+11:00)
+								Ponape"},{"value":"Pacific/Norfolk","label":"(GMT+11:30)
+								Norfolk"},{"value":"Asia/Kamchatka","label":"(GMT+12:00) Moscow+08 -
+								Petropavlovsk-Kamchatskiy"},{"value":"Pacific/Auckland","label":"(GMT+12:00)
+								Auckland"},{"value":"Pacific/Fiji","label":"(GMT+12:00)
+								Fiji"},{"value":"Pacific/Funafuti","label":"(GMT+12:00)
+								Funafuti"},{"value":"Pacific/Kwajalein","label":"(GMT+12:00)
+								Kwajalein"},{"value":"Pacific/Majuro","label":"(GMT+12:00)
+								Majuro"},{"value":"Pacific/Nauru","label":"(GMT+12:00)
+								Nauru"},{"value":"Pacific/Tarawa","label":"(GMT+12:00)
+								Tarawa"},{"value":"Pacific/Wake","label":"(GMT+12:00)
+								Wake"},{"value":"Pacific/Wallis","label":"(GMT+12:00)
+								Wallis"},{"value":"Pacific/Apia","label":"(GMT+13:00)
+								Apia"},{"value":"Pacific/Enderbury","label":"(GMT+13:00)
+								Enderbury"},{"value":"Pacific/Fakaofo","label":"(GMT+13:00)
+								Fakaofo"},{"value":"Pacific/Tongatapu","label":"(GMT+13:00)
+								Tongatapu"},{"value":"Pacific/Kiritimati","label":"(GMT+14:00)
+								Kiritimati"}],"defaultValue":"America/Sao_Paulo","value":"America/Sao_Paulo"},{"id":"lang-finish-on-date","label":"Linguagem","type":"select","options":[{"value":"pt","label":"Português"},{"value":"ar","label":"العربية"},{"value":"zh","label":"中國"},{"value":"fa","label":"فارسی"},{"value":"he","label":"עברית"},{"value":"hi","label":"हिंदी"},{"value":"ko","label":"한국의दी"},{"value":"th","label":"ใช้�&nbsp;าษาไทย"},{"value":"el","label":"Eλληνικά"},{"value":"bg","label":"Bulgarian"},{"value":"cs","label":"České"},{"value":"da","label":"Dansk"},{"value":"de","label":"Deutsche"},{"value":"en","label":"English"},{"value":"es","label":"Español"},{"value":"fr","label":"Français"},{"value":"it","label":"Italiano"},{"value":"hu","label":"Magyar"},{"value":"nl","label":"Nederlands"},{"value":"no","label":"Norsk"},{"value":"pl","label":"Polski"},{"value":"ru","label":"Pусский"},{"value":"sk","label":"Slovenský"},{"value":"fi","label":"Suomen"},{"value":"sv","label":"Svenska"},{"value":"tr","label":"Türk"},{"value":"vi","label":"Tiếng
+								việt"}],"defaultValue":"pt","value":"pt"}]</div>
+							<div data-llbee-model-section-fragment="countdownId" style="display: none;">33iwvl</div>
+							<div data-llbee-model-section-fragment="countdownSrc" style="display: none;">
+								http://i.countdownmail.com/33iwvl.gif</div><img src="images/33iwvl.gif"
+								alt="countdown modelo 001" data-llbee-model-item="33iwvl">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-5">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-video">
+						<div style="padding:75% 0 0 0;position:relative;"><iframe
+								src="https://www.youtube.com/embed/m2pv1bzefQw?controls=0"
+								style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+								allow="fullscreen" allowfullscreen=""></iframe></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-button"><a
+							style="font-size: 20px; background-color: #47c838; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; padding-top: 5px; width: 80%; display: inline-block;"
+							class="bee-button-content" href="https://link.pagar.me/lByv3fKafp" target="_blank"><span
+								style="word-break: break-word; font-size: 20px; line-height: 200%;">EU QUERO ME TORNAR
+								MEMBRO DA MONEY MAKERS AISIM! <br style="font-size: 20px;"><sub
+									style="font-size: 20px;">EU QUERO MULTIPLICAR O MEU LUCRO COM A IA</sub></span></a>
+					</div>
+					<div class="bee-block bee-block-5 bee-spacer">
+						<div class="spacer" style="height:30px;"></div>
+					</div>
+					<div class="bee-block bee-block-6 bee-button"><a
+							style="font-size: 20px; background-color: #47c838; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;"
+							class="bee-button-content"
+							href="https://api.whatsapp.com/send/?phone=5585987871525&amp;text&amp;type=phone_number&amp;app_absent=0"
+							target="_blank"><span style="word-break: break-word; font-size: 20px; line-height: 200%;">EU
+								QUERO CONVERSAR COM A EQUIPE<br style="font-size: 20px;"><sub
+									style="font-size: 20px;">CLIQUE AQUI PARA CONVERSAR COM O TIME</sub></span></a>
+					</div>
+					<div class="bee-block bee-block-7 bee-spacer">
+						<div class="spacer" style="height:120px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-6">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder">O QUE VOCÊ IRÁ LEVAR NA MONEY MAKERS</span> </h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-7">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-fixedwidth"
+							src="images/1_2.png" style="max-width:102px;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder">1 ANO DE COMUNIDADE (INTERAÇÃO DIÁRIA)�&nbsp;</span> </h1>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h1><span class="tinyMce-placeholder">A sua chance de ser acompanhado e orientado em todas as
+								etapas da criação de uma estratégia usando a IA</span> </h1>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-fixedwidth"
+							src="images/2_3.png" style="max-width:68px;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder">CALLS SEMANAIS</span> </h1>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h1><span class="tinyMce-placeholder">1X por semana teremos CALL em grupo para mentoria com os
+								membros</span> </h1>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-fixedwidth"
+							src="images/3_3.png" style="max-width:68px;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder">NOVOS CURSOS COMPLETOS</span> </h1>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h1>Todos os meses NOVAS IMERSÕES com estratégias�&nbsp; exclusivas para os MEMBROS. </h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-8">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:100px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder">Caro amigo(a),<br><br>Todo mundo em nosso mercado sabe que
+								criar um produto digital pode ser algo muito lucrativo. TODO MUNDO sabe
+								disso.<br><br>Mas ao mesmo tempo, a grande maioria das pessoas que decidem criar um
+								produto digital jamais conseguem dar "vida ao seu projeto".<br><br>Outros até conseguem
+								"criar o produto perfeito", só tem um problema. Não vendem. Existem também aqueles que
+								criam o produto, conseguem vender MAS com o passar do tempo o produto "morre". E eles
+								ficam perdidos sem saber o que fazer.<br><br>Mas são poucos os que realmente conseguem
+								criar produtos digitais que irão gerar vendas todos os dias. Mais do que isso, são
+								poucos que irão criar um PORTFÓLIO de Produtos Digitais lucrativos.<br><br>Isso é
+								fato!<br><br>HOJE é a sua chance de entrar nesse grupo de ELITE que consegue criar
+								produtos digitais com velocidade e qualidade, sem ficar travado em nenhuma das etapas.
+								Um grupo que é capaz de vender o seu produto digital todos os dias<br><br>Hoje você tem
+								uma oportunidade que nunca foi apresentada anteriormente, algo raro, que não irá ficar
+								disponível por muito tempo.<br>A Maneira Mais Fácil, Rápida e Lucrativa Para Criar Novos
+								Produtos Digitais. Sem colocar em RISCO o seu tempo e o seu dinheiro<br>Por que algumas
+								pessoas conseguem criar novos produtos em alguns dias (Com qualidade) e outras pessoas
+								demoram mais de 2 anos? (E o produto não vende?)<br><br>A resposta é simples: Quando
+								você NÃO sabe o que está fazendo, tudo é mais demorado, com mais gastos e bastante
+								frustrante.<br><br>Ser um Produtor Digital não deveria ser uma jornada solitária,
+								principalmente quando você pode ser orientado por pessoas que já estão gerando vendas
+								diárias ou já criaram todos os tipos de produtos possíveis nesse incrível
+								mercado.<br><br>Por que tentar fazer tudo sozinho? Por que tentar descobrir algo que já
+								fizeram na sua frente?<br><br>Tudo o que você terá acesso no Clube dos Produtores,
+								ABSOLUTAMENTE TUDO, já foi testado e validado.<br><br>Nós temos TODOS os tipos de
+								produtos que você possa imaginar:<br><br>Produtos de R$7<br>Produtos de R$47<br>Produtos
+								de R$97<br>Produtos de R$197<br>Produtos de R$297<br>Produtos de R$495<br>Produtos de
+								R$995<br>Produtos de R$1.997<br>Produto de R$5.000<br>Grupo de R$15.000<br>Grupo de
+								R$30.000<br>Recorrência de R$38 por mês<br>Recorrência de R$197 por mês<br>Livro
+								Físico<br>Eventos<br>Workshop Presencial<br>Mentoria Online<br>Grupo de
+								Mastermind<br>Grupo de Implementação<br>Serviços Premium<br><br>E quer saber o melhor?
+								Nós já vendemos TODOS esses produtos e sabemos exatamente o que funciona e o que não
+								funciona.<br><br>E agora, nós acabamos de lançar um NOVO modelo de produto que é o Clube
+								dos Produtores. Uma Assinatura Anual, Com acompanhamento de 12 meses, Conteúdo Mensal,
+								Lives, Guias e Tutoriais.<br><br>Conteúdo 100% criado para os assinantes do Clube dos
+								Produtores. Você consegue imaginar o poder disso para o seu negócio? Ter um conteúdo
+								criado em TEMPO REAL para solucionar os seus maiores problemas?<br><br>Isso será
+								ÉPICO!<br><strong>Produtos de Ticket Menor</strong>: Eu vou te ensinar qual a estrutura
+								perfeita para produtos de menor valor, quais os melhores tipos de oferta, páginas de
+								vendas e NOMES para um produto de baixo valor.<br><br><strong>Produtos de
+									Recorrência</strong>: Como criar um Produto de Recorrência Mensal que NÃO atrapalhe
+								as vendas dos outros produtos. Qual o "tamanho" ideal de novos conteúdos, qual a melhor
+								oferta, como aumentar os assinantes TODOS os dias e como transformar um assinante mensal
+								em um assinante ANUAL<br><br><strong>Mentoria Online</strong>: Os bastidores completos
+								de como vender e ENTREGAR uma mentoria online. Qual a melhor maneira de estruturar cada
+								encontro, como criar a melhor oferta, como precificar sua mentoria e como transformar a
+								sua mentoria em um gerador de Clientes para os seus programas de ALTO
+								ticket<br><br><strong>Grupos de Negócios e MasterMind</strong>: Qual o formato perfeito
+								para construir um grupo de negócios do ZERO. Como colocar os primeiros membros no seu
+								grupo, qual a estrutura você deve utilizar para conduzir cada encontro, qual o tipo de
+								conteúdo, como acompanhar os membros individualmente e como cuidar do grupo
+								coletivamente.<br><br>TODOS os bastidores de como ativar esse modelo de produto no seu
+								portfólio.<br><br><strong>Workshop Presencial:</strong>�&nbsp;Como criar pequenos
+								eventos de 2 dias para 30-60 pessoas que irão pagar de R$1.000 �&nbsp; R$2.000. A melhor
+								maneira de vender o Workshop, qual o melhor tipo de conteúdo entregar e como transformar
+								os participantes do Workshop em clientes de Grupos de Negócios</span> </h1>
+					</div>
+					<div class="bee-block bee-block-3 bee-spacer">
+						<div class="spacer" style="height:90px;"></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-button"><a
+							style="font-size: 20px; background-color: #47c838; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 700; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: 80%; display: inline-block;"
+							class="bee-button-content" href="https://link.pagar.me/lByv3fKafp" target="_blank"><span
+								style="word-break: break-word; font-size: 20px; line-height: 200%;">EU QUERO ME TORNAR
+								MEMBRO DA MONEY MAKERS AISIM! <br style="font-size: 20px;"><sub
+									style="font-size: 20px;">EU QUERO MULTIPLICAR O MEU LUCRO COM A IA</sub></span></a>
+					</div>
+					<div class="bee-block bee-block-5 bee-spacer">
+						<div class="spacer" style="height:90px;"></div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<div class="bee-row bee-row-9">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-fixedwidth"
+							src="images/ota.svg" style="max-width:102px;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-paragraph" id="module_16d0b545-9756-4076-b60d-36f06b2728e7">
+						<p>Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair
+							do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços
+							para indicar claramente e mostrar todas as provas do produto e usamos resultados reais.
+							Todas e quaisquer declarações prospectivas contidas neste site ou em qualquer um de nossos
+							produtos têm a intenção de expressar nossa opinião sobre o potencial de ganhos que algumas
+							pessoas podem alcançar. Mas muitos fatores serão importantes para determinar seus resultados
+							reais, e não garantimos que você obterá resultados semelhantes aos nossos ou aos de qualquer
+							outra pessoa.</p>
+						<p>© 2025 Jota Investimentos e Consultoria Ltda.<br>CNPJ 40.734.313/0001-98<br>Relacionamento
+							com o assinante: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+								data-cfemail="f5969a9b8194819ab59f9a81948187909c9b9498909b819a86db969a98db9787">[email�&nbsp;protected]</a><br>Av.
+							Brigadeiro Faria Lima, 3.477 · Torre A · 07º Andar ·<br>04538-133 São Paulo, SP</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script data-cfasync="false" src="js/email-decode.min.js"></script>
+	<script src="js/base-script.js" async=""></script>
+
+
+	<link href="css/beefree-pages-overwrites.css" rel="stylesheet" type="text/css" async="">
+	<!-- 
+<link href="https://blob.contato.io/machine-files/all-css/bee-pages.css" rel="stylesheet" type="text/css" async /> 
+-->
+	<style>
+		button,
+		.bee-button>* {
+			cursor: pointer;
+		}
+	</style>
+
+	<!-- jQuery -->
+	<script src="js/jquery-351.js" type="text/javascript"></script>
+
+	<!-- Page data -->
+	<script type="text/javascript">
+		var _pageID = parseInt('21908772');
+		var _pageType = parseInt('12');
+		var _redirectID = parseInt('0');
+		var _machineID = parseInt('745535');
+		var _chatCode = '';
+		var _leadSource = '';
+		var _leadSCK = '';
+		var _clientLang = 'en-US';
+		var _isTest = Boolean(parseInt('0'));
+		var _isMultiCapture = Boolean(parseInt('0'));
+		var _LGPDConsentText = '';
+		var _LGPDLinkTerms = '';
+		var _LGPDUrlTerms = '';
+		var _facebookApiConversionPixels = '';
+
+		var _cfIpCountry = '';
+		var _cfHostname = '';
+	</script>
+
+	<!-- PoweredBy -->
+
+
+	<!-- PageViews -->
+	<script src="js/page-views.js" type="text/javascript" async=""></script>
+
+	<!-- Capture Script and CSS -->
+	<link href="css/capture-css-component.css" rel="stylesheet" type="text/css" async="">
+	<script src="js/capture-script-component.js" type="text/javascript" async=""></script>
+
+	<!-- LeadLovers Captcha -->
+
+	<!-- LGPD -->
+
+	<!-- Facebook Api Conversion -->
+
+	<!-- Masks -->
+	<script src="js/cleave.js" type="text/javascript" async=""></script>
+	<script src="js/ll-fields-mask.js" type="text/javascript" async=""></script>
+</body>
+
+</html><!-- Custom styles and bee overwrites -->
