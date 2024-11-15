@@ -1,0 +1,1 @@
+(function(n){n(window.jQuery,window,document)})(function(n){n(function(){if(typeof _isTest!="undefined"&&!_isTest){var t=0,i=0;typeof _postID!="undefined"&&(t=_postID);typeof _redirectID!="undefined"&&(i=_redirectID);n.ajax({url:"/Pages/AddPageViewScript",data:{id:_pageID,src:_leadSource,sck:_leadSCK,post:t,redirectID:i},type:"post",dataType:"json"})}})})
