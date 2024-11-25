@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+
+
+
+
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .progress-container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #d0d0d0; /* Tom suave de cinza */
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+            border: 1px solid #ccc; /* Borda sutil */
+        }
+        .progress-bar {
+            height: 20px;
+            width: 25%; /* Inicialmente 25% */
+            background-color: #007bff;
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            position: relative;
+            animation: fillAnimation 1s ease-in-out;
+        }
+        @keyframes fillAnimation {
+            from { width: 0%; }
+            to { width: 25%; }
+        }
+        .progress-text {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .quiz-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .quiz-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .quiz-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .quiz-explanation {
+            font-size: 16px;
+            color: #000;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .quiz-question {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .quiz-option {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .quiz-option:hover {
+            background-color: #0056b3;
+        }
+        .quiz-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            padding: 10px;
+        }
+        .quiz-footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .quiz-footer a:hover {
+            text-decoration: underline;
+        }
+	</style>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WVJ585H');</script>
+	<!-- End Google Tag Manager -->
+
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVJ585H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="progress-container">
+        <div class="progress-bar">25%</div>
+    </div>
+
+    <div class="progress-text">Questão 02 de 06</div>
+
+    <div class="quiz-container">
+        <div class="quiz-title">Você já tentou atuar nesse mercado como um profissional?</div>
+        <img src="images/capa.webp" alt="Ilustração da Pergunta" class="quiz-image">
+        <p class="quiz-explanation">Alguma vez você tentou se tornar um profissional desse mercado de verdade?</p>
+        <div class="quiz-question">Qual é a sua escolha?</div>
+        <a href="./3.html" class="quiz-option">Já tentei</a>
+        <a href="./3.html" class="quiz-option">Nunca</a>
+    </div>
+
+    <div class="quiz-footer">
+        <p>&copy; <span id="start-year">2019</span> - <span id="current-year"></span> Jota Treinamentos™</p>
+      Esse site não possui nenhuma ligação com o Facebook, Twitter, Google ou Instagram<br>
+      Ao adentrar em nosso grupo free você concorda com as Regras do canal.<br>
+      <a class="link" href="/termos">Termos de uso</a>| <a class="link" href="/politica">Política de privacidade</a> | <a class="link" href="/consumivel">Produto consumível</a> <br>
+     
+    </div>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("current-year").textContent = currentYear;
+    </script>
+
+</body>
+</html>
