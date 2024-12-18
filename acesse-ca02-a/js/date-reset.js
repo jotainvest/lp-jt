@@ -1,0 +1,1 @@
+$(document).ready((function(){(new Date).getTime()>=new Date($(".endDate").attr("data-enddate")).getTime()&&$(".endDate").text("DISPONÍVEL AGORA")}));
